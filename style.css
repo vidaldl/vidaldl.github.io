@@ -28,3 +28,19 @@ h1 {
   background-size: cover;
   bacgkround-repeat: no-repeat;
 }
+
+#find-jumbotron {
+  width: 100%;
+  background-image: url('https://cdn.glitch.com/8a2da6af-b455-4a99-80bf-bc23596d8093%2Fscott-webb-1ddol8rgUH8-unsplash.jpg?v=1624150554111');
+  background-position: top;
+  background-size: cover;
+  bacgkround-repeat: no-repeat;
+}
+
+#about-jumbotron {
+  width: 100%;
+  background-image: url('https://cdn.glitch.com/8a2da6af-b455-4a99-80bf-bc23596d8093%2Fchuttersnap-eXtKryPRVC8-unsplash.jpg?v=1624150705257');
+  background-position: top;
+  background-size: cover;
+  bacgkround-repeat: no-repeat;
+}
