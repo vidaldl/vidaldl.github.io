@@ -1,6 +1,7 @@
 /* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
 
 body {
   background-color: white;
@@ -10,9 +11,16 @@ body {
   color: #444;
 }
 
-h1 {
-  font-family: "Merriweather", serif;
-  font-size: 32px;
+h1, .title {
+  font-family: 'Mate SC', serif;
+  font-size: 25px;
+  margin-bottom: 5px;
+  color: #0D3F8C;
+  display: block;
+}
+
+span {
+  font-family: 'Oswald', sans-serif;
 }
 
 .jumbotron {
@@ -284,7 +292,7 @@ header .row{
 }
 
 .navbar {
-  background-color: #333;
+  background-color: #0D3F8C;
   overflow: hidden;
   height: 100%;
   
@@ -295,12 +303,12 @@ nav ul {
   margin: 0;
   padding: 0;
   height: 100%;
-  margin-top: 0 auto;
+  
 }
 
 .nav-item a{
   float: left;
-  color: #f2f2f2;
+  color: #F6B93B;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -309,8 +317,8 @@ nav ul {
 }
 
 .nav-item a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #F6B93B;
+  color: #0D3F8C;
 }
 
 
@@ -321,7 +329,7 @@ header {
 
 
 .jumbo-box {
-  height: 130px;
+  height: 150px;
   width: 45%;
   background-color: white;
   float: right;
@@ -331,6 +339,7 @@ header {
   top: 50%;
   transform: translateY(-50%);
   padding: 10px;
+  border: 8px double #3F7CD9;
 }
 
 .jumbo-box-title {
@@ -346,3 +355,17 @@ header {
   margin-left: 10px;
   display: block;
 }
+
+.property-title {
+  font-weight: bold;
+}
+
+.property-details {
+  
+}
+
+.property-location{
+  font-style: italic;
+}
+
+.float-left
