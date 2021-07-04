@@ -285,6 +285,9 @@ section {
   float: right;
   margin-right: 35px;
   text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .jumbo-box-title {
@@ -293,4 +296,10 @@ section {
   text-aling: center;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.jumbo-box-text{
+  margin-right: 10px;
+  margin-left: 10px;
+  display: block;
 }
