@@ -368,4 +368,37 @@ header {
   font-style: italic;
 }
 
-.float-left
+.float-left{ 
+float: left;
+}
+
+.float-right{ 
+float: right;
+}
+
+.margin-top-small{
+  margin-top: 5px;
+}
+
+.site-plan-link {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+
+
+footer {
+  background-color: #333;
+  padding: 15px 16px
+}
+
+
+.copy-text{
+  color: white !important;
+}
+
+.social-img {
+  margin: 0 auto;
+}
+
