@@ -169,6 +169,11 @@ section {
   margin-right: -15px;
   margin-left: -15px;
 }
+.section {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  
+}
 .row:before,
 .row:after {
   display: table;
