@@ -137,13 +137,27 @@ img {
     margin-top: 3em;
 }
 
-
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
+.top-down-margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 footer,
 header,
@@ -151,7 +165,20 @@ nav,
 section {
   display: block;
 }
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
 
+.container:after,
+.row:after {
+  clear: both;
+}
 
 .container {
   padding-right: 15px;
