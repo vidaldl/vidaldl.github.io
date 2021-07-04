@@ -172,8 +172,8 @@ section {
 .section {
   margin-top: 35px;
   margin-bottom: 35px;
-  
 }
+
 .row:before,
 .row:after {
   display: table;
@@ -276,3 +276,21 @@ section {
 }
 
      
+
+
+.jumbo-box {
+  height: 130px;
+  width: 45%;
+  background-color: white;
+  float: right;
+  margin-right: 35px;
+  text-align: center;
+}
+
+.jumbo-box-title {
+  display: block;
+  font-weight: bold;
+  text-aling: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
