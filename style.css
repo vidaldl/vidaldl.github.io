@@ -114,6 +114,13 @@ button {
      between the labels and their text fields */
   margin-left: .5em;
 }
+img {
+  vertical-align: middle;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 
 #feedback {
     background-color: antiquewhite;
@@ -133,7 +140,6 @@ button {
 
 
 html {
-  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -173,7 +179,16 @@ section {
   margin-right: -15px;
   margin-left: -15px;
 }
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
 
+.container:after,
+.row:after {
+  clear: both;
+}
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
   position: relative;
