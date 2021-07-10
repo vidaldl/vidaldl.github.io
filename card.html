@@ -3,12 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <title>title</title>
+  <style>
+    img {
+      max-width: 100%;
+    }
+    
+    .card {
+      width: 320px;
+      box-shadow: 1px 1px 4px 1px #888;
+      border-radius: 3px;
+      background-color: white;       
+    }
+    
+    .card span {
+      float: right;
+      color: grey;
+    }
+    footer {
+      padding: 10px 10px;
+      
+    }
+    .viewButton {
+      background-color: white;
+      margin-right: 0px;
+      border: 1px solid gray;
+      border-radius: 5px 0px 0px 5px;
+      padding: 5px;
+      color: grey;
+    }
+    
+    .editButton {
+      background-color: white;
+      margin-left: 0px;
+      border: 1px solid gray;
+      border-radius: 0px 5px 5px 0px;
+      padding: 5px;
+      color: grey;
+    }
+  </style>
 </head>
 <body>
-  <article>
+  <article class="card">
     <img src="https://picsum.photos/320/240">
     <footer>
-      <b
+      <p>
+        This is a card with supporting Text, Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin molestie malesuada.
+      </p>
+      <button class="viewButton">
+        View
+      </button><!--
+      --><button class="editButton">
+        Edit
+      </button>
+      
+      <span>9 mins</span>
     </footer>
   </article>
 </body>
