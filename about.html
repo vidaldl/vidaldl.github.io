@@ -10,11 +10,11 @@
     <div class="container">
       <header>
         <div class="row">
-          
+
           <div class="col-4 nav-logo">
             <img src="https://cdn.glitch.com/8a2da6af-b455-4a99-80bf-bc23596d8093%2FFor%20Zale%20-%20horizontal.png?v=1624729117326" class="img-responsive" />
           </div>
-          
+
           <div class="col-8 navbar">
             <ul class="nav">
               <li class="nav-item"><a href="index.html">Home</a></li>
@@ -22,22 +22,22 @@
               <li class="nav-item"><a href="about.html">About Us</a></li>
             </ul>
           </div>
-          
+
         </div>
       </header>
       <main>
         <div class="jumbotron" id="about-jumbotron">
           <div class="jumbo-box">
-            <span class="jumbo-box-title">About Us</span>
+            <span class="jumbo-box-title title">About Us</span>
             <span class="jumbo-box-text">The Best Tool Designed to Take it Off Your Hands.</span>
           </div>
         </div>
-        
-        <section class="paragraph-img-right">
+
+        <section class="paragraph-img-right section">
           <div class="row">
             <div class="col-8 paragraph-text">
-              <span class="paragraph-text-title">Who are we?</span>
-              
+              <span class="paragraph-text-title title">Who are we?</span>
+
               <span class="paragraph-text-content">We are For Zale and we’re here to take it off your hands. Whether you’re a home buyer, homeowner or real estate agent we are here to make your life and the process of buying and selling a house easier than you ever thought possible.</span>
             </div>
             <div class="col-4 paragraph-img">
@@ -45,51 +45,92 @@
             </div>
           </div>
         </section>
-          
-        <section class="paragraph-img-left">
+
+        <section class="paragraph-img-left section">
           <div class="row">
             <div class="col-4 paragraph-img">
               <img src="https://cdn.glitch.com/8a2da6af-b455-4a99-80bf-bc23596d8093%2Fcosmic-timetraveler-zh_ofCt2r9c-unsplash.jpg?v=1624150709317">
             </div>
             <div class="col-8 paragraph-text">
-              <span class="paragraph-text-title">Why For Zale?</span>
-              
+              <span class="paragraph-text-title title">Why For Zale?</span>
+
               <span class="paragraph-text-content">This website will be a haven for people in search or wanting to sell their properties. We all know the hassle of looking for a home, it’s hard to find the perfect place where we see ourselves growing old and our families growing together, what makes it worse is the time you have to set aside in your busy life to go out to prospective neighborhoods, call the real estate agent, make an appointment when the house, you and the agent are available and get the best price and low commission for the property you’ve decided is the one.
 This process is an exhausting and annoying one, if anything goes wrong with the steps it means you have to start all over again. You start seeing this pattern and after months in the lookout and failing to complete this process you start to realize that the question is not: Do you want to find your dream home? The question is: Will you ever find your dream home? Is not easy. Is it?</span>
             </div>
           </div>
         </section>
-        
-        
+
+        <section class="section">
+          <div class="row">
+            <h3 class="title text-center">Contact Us!</h3>
+          </div>
+          <div id="feedback"></div>
+          <form action="/my-handling-form-page" method="post">
+           <ul>
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name">
+            </li>
+            <li>
+              <label for="mail">E-mail:</label>
+              <input type="email" id="mail" name="user_email">
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+              <li class="button">
+                <button type="submit">Send your message</button>
+              </li>
+           </ul>
+          </form>
+        </section>
+
       </main>
-      
-      <footer>
-        <div class="copy-text">
-          <span>&copy For Zale 2021 - All Rights Reserved</span>
+
+      <footer class="row">
+        <div class=" col-6">
+          <span class="copy-text">&copy For Zale 2021 - All Rights Reserved</span>
           <div class="row">
             <small><a href="https://www.freepik.com/free-photos-vectors/logo">Logo vector created by sentavio - www.freepik.com</a></small>
           </div>
         </div>
-        <div class="social">
+        <div class="social col-6">
           <div class="row">
-            <a class="social-link" href="#">
-            <img src="#" class="social-img">
+            <a href="https://facebook.com" class="col-4" target="_blank">
+              <img src="https://cdn.glitch.com/978169ec-b012-474a-b1fc-2d376ab3a5d5%2Ffacebook.png?v=1620946954793" alt="Facebook icon">
             </a>
-
-            <a class="social-link" href="#">
-              <img src="#" class="social-img">
+            <a href="https://twitter.com" class="col-4" target="_blank">
+              <img src="https://cdn.glitch.com/978169ec-b012-474a-b1fc-2d376ab3a5d5%2Ftwitter.png?v=1620946957460" alt="Twitter icon">
             </a>
-
-            <a class="social-link" href="#">
-              <img src="#" class="social-img">
+            <a href="https://instagram.com" class="col-4" target="_blank">
+              <img src="https://cdn.glitch.com/978169ec-b012-474a-b1fc-2d376ab3a5d5%2Finstagram.png?v=1620946959992" alt="Instagram icon">
             </a>
           </div>
-          <div class="row">
-            <a class="site-plan-link" href="site-plan.html">Site Plan</a>
+          <div class="row margin-top-small">
+            <a class="site-plan-link float-right" href="site-plan.html">Site Plan</a>
           </div>
-          
+
         </div>
       </footer>
     </div>
+
+    <script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+        });
+    </script>
   </body>
 </html>
